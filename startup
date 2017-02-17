@@ -2,6 +2,6 @@
 export DISPLAY=:1
 Xvfb :1 -screen 0 1600x900x16 &
 sleep 5
-awesome&
+fluxbox&
 touch /root/.Xauthority
 x11vnc -display :1 -nopw  -xkb -ncache 10 -ncache_cr -forever
