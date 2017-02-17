@@ -12,7 +12,7 @@ RUN echo "deb http://www.yade-dem.org/packages/ stretch/" >> /etc/apt/sources.li
 
 RUN wget -O - http://www.yade-dem.org/packages/yadedev_pub.gpg | apt-key add -
 RUN apt-get clean && apt-get update && \
-    apt-get install -y x11vnc  unzip xvfb iceweasel fluxbox net-tools \
+    apt-get install -y x11vnc  unzip xvfb iceweasel fluxbox net-tools vim \
     build-essential \
     cmake \
     devscripts \
