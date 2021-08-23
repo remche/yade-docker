@@ -12,7 +12,14 @@ RUN wget -O - http://www.yade-dem.org/packages/yadedev_pub.gpg | apt-key add
 
 
 RUN apt-get clean && apt-get update && \
-    apt-get install -y x11vnc  unzip xvfb fluxbox net-tools vim yadedaily
+    apt-get install -y \
+    fluxbox \
+    net-tools \
+    unzip \
+    vim \
+    x11vnc \
+    xvfb \
+    yadedaily
 
 RUN apt-get autoclean && \
     apt-get autoremove && \
